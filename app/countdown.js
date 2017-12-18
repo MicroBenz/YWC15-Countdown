@@ -4,7 +4,7 @@ const padMilliSec = val => _.padStart(val, 3, '0');
 const timeSelector = document.getElementById('time');
 
 const interval = setInterval(() => {
-  const deadline = moment('7-12-2017', 'D-MM-YYYY');
+  const deadline = moment('4-1-2018', 'D-MM-YYYY');
   const interval = moment(deadline).diff(moment()); // Millisecond unit
   if (interval > 0) {
     const ms = interval % 1000;
@@ -12,7 +12,6 @@ const interval = setInterval(() => {
     const min = Math.floor((interval / 60000) % 60).toFixed(0);
     const hour = Math.floor(((interval / (3600000)) % 24)).toFixed(0);
     const display = `${padTime(hour)}:${padTime(min)}:${padTime(second)}.${padMilliSec(ms)}`;
-    console.log(display);
     timeSelector.innerHTML = display;
   } else {
     clearInterval(interval);
