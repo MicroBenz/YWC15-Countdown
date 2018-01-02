@@ -1,1 +1,29 @@
-body,html{width:100%;height:100%;background:url(../images/bg-back.png) center center;background-size:100% 100% cover}.overlay-bg{background:url(../images/bg-front.png) center center no-repeat;position:fixed;left:0;right:0;bottom:0;top:0;background-size:cover}.c2-inside,.c3{bottom:-200px;left:-190px}@keyframes rotateCounterClockwise{from{transform:rotate(0)}to{transform:rotate(-360deg)}}@keyframes rotateClockwise{from{transform:rotate(0)}to{transform:rotate(360deg)}}.c1,.c2,.c2-inside,.c3{position:fixed;background-size:cover!important}.c1{background:url(../images/C1.png);right:-375px;top:-375px;width:750px;height:750px;animation:rotateCounterClockwise 50s infinite linear}.c2{background:url(../images/C2.png);width:300px;height:300px;top:-150px;right:310px;animation:rotateClockwise 50s infinite linear}.c3{background:url(../images/C3.png);width:500px;height:500px;animation:rotateClockwise 10s infinite linear}.c2-inside{background:url(../images/C2.png);width:490px;height:490px;animation:rotateCounterClockwise 20s infinite linear}.time-container{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}@-webkit-keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@-moz-keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}#time{text-align:center;font-family:digital;font-size:170px;background:linear-gradient(270deg,#03dda5,#03dda5,#39df56,#74d900,#cad900,#d9b800,#d99100,#d95800,#ec4a4a);background-size:1000% 1000%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:gradientShade 46s ease infinite;-moz-animation:gradientShade 46s ease infinite;animation:gradientShade 46s ease infinite;margin:10px 0}.ywc-logo{width:300px}
+body,html{width:100%;height:100%;background:url(../images/bg-back.png) center center;background-size:100% 100% cover}.overlay-bg{background:url(../images/bg-front.png) center center no-repeat;position:fixed;left:0;right:0;bottom:0;top:0;background-size:cover}.c2-inside,.c3{bottom:-200px;left:-190px}@keyframes rotateCounterClockwise{from{transform:rotate(0)}to{transform:rotate(-360deg)}}@keyframes rotateClockwise{from{transform:rotate(0)}to{transform:rotate(360deg)}}.c1,.c2,.c2-inside,.c3{position:fixed;background-size:cover!important}.c1{background:url(../images/C1.png);right:-375px;top:-375px;width:750px;height:750px;animation:rotateCounterClockwise 50s infinite linear}.c2{background:url(../images/C2.png);width:300px;height:300px;top:-150px;right:310px;animation:rotateClockwise 50s infinite linear}.c3{background:url(../images/C3.png);width:500px;height:500px;animation:rotateClockwise 10s infinite linear}.c2-inside{background:url(../images/C2.png);width:490px;height:490px;animation:rotateCounterClockwise 20s infinite linear}.time-container{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}@-webkit-keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@-moz-keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes gradientShade{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}#time{line-height: 150px;text-align:center;font-family:digital;font-size:170px;background:linear-gradient(270deg,#03dda5,#03dda5,#39df56,#74d900,#cad900,#d9b800,#d99100,#d95800,#ec4a4a);background-size:1000% 1000%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:gradientShade 46s ease infinite;-moz-animation:gradientShade 46s ease infinite;animation:gradientShade 46s ease infinite;margin:40px 0}.ywc-logo{width:300px}
+.sponsor-logo {
+  position: relative;
+  display: flex;
+  margin-right: 50px;
+}
+.sponsor-logo:last-child {
+  margin-right: 0;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  height: 220px;
+  width: 220px;
+  max-width: none;
+  margin: -28px;
+}
+
+.sponsor-image {
+  display: flex;
+  height: 125px;
+  margin: 20px;
+  max-width: none;
+}
+.sponsor-container {
+  display: flex;
+}
