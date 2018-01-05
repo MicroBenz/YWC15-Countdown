@@ -18,6 +18,26 @@ body,html{width:100%;height:100%;background:url(../images/bg-back.png) center ce
   margin: -28px;
 }
 
+@keyframes rotateClockwise {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(359deg); }
+}
+
+@keyframes rotateCounterClockwise {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(-180deg); }
+  100% { transform: rotate(-359deg); }
+}
+
+.rotate-clockwise {
+  animation: rotateClockwise 4s infinite linear;
+}
+
+.rotate-counterclockwise {
+  animation: rotateCounterClockwise 4s infinite linear;
+}
+
 .sponsor-image {
   display: flex;
   height: 125px;
@@ -26,4 +46,35 @@ body,html{width:100%;height:100%;background:url(../images/bg-back.png) center ce
 }
 .sponsor-container {
   display: flex;
+}
+
+.glhf {
+  font-family: 'Lato', sans-serif;
+  color: #66fcf1; 
+  font-size: 30px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.kidding-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: #66fcf1;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.strike {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.blink-me {
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }

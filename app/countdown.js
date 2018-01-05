@@ -6,7 +6,7 @@ const timeSelector = document.getElementById('time');
 const convertIntervalToTime = interval => ({
   second: Math.floor((interval / 1000) % 60).toFixed(0),
   min: Math.floor((interval / 60000) % 60).toFixed(0),
-  hour: Math.floor(((interval / (3600000)) % 24)).toFixed(0)
+  hour: Math.floor(interval / 3600000).toFixed(0)
 });
 
 const fakeDeadline = moment('6-1-2018 17:40.00', 'D-MM-YYYY HH:mm.ss');
