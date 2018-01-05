@@ -15,6 +15,8 @@ const trueDeadline = moment('6-1-2018 18:00.00', 'D-MM-YYYY HH:mm.ss');
 const useFakeDeadline = moment().isBefore(fakeDeadline);
 
 const interval = setInterval(() => {
+  let text = 'Good Luck, Have Fun :)';
+  let textColor = '#66fcf1';
   let msInterval;
   if (useFakeDeadline) {
     msInterval = moment(fakeDeadline).diff(moment());
@@ -26,8 +28,30 @@ const interval = setInterval(() => {
     const { second, min, hour } = convertIntervalToTime(msInterval);
     const display = `${padTime(hour)}:${padTime(min)}:${padTime(second)}.${padMilliSec(ms)}`;
     timeSelector.innerHTML = display;
+    const hourNum = parseInt(hour, 10);
+    if (hourNum < 7) {
+      text = "Let's the game begin!";
+      textColor = '#03dda5';
+    } else if (hourNum < 6) {
+      text = "JUST DO IT!";
+      textColor = '#39df56';
+    } else if (hourNum < 4) {
+      text = '"I know that feel bro" - Head of YWC#15 Dev Team';
+      textColor = '#cad900';
+    } else if (hourNum < 2) {
+      text = 'At least so many thing should come out now!';
+      textColor = '#d95800';
+    } else if (hourNum < 1) {
+      text = 'This is your last chance. Make it count!';
+      textColor = '#ec4a4a';
+    }
+
   } else {
     timeSelector.innerHTML = '00:00:00.000';
     clearInterval(interval);
+    text = 'You made it! See you on the stage :) Good Luck!';
+    textColor = '#66fcf1';
   }
+  document.getElementById('glhf').innerHTML = text;
+  document.getElementById('glhf').setAttribute('style', `color: ${textColor}`);
 }, 1);
