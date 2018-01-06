@@ -9,8 +9,8 @@ const convertIntervalToTime = interval => ({
   hour: Math.floor(interval / 3600000).toFixed(0)
 });
 
-const fakeDeadline = moment('6-1-2018 17:40.00', 'D-MM-YYYY HH:mm.ss');
-const trueDeadline = moment('6-1-2018 18:00.00', 'D-MM-YYYY HH:mm.ss');
+const fakeDeadline = moment('7-1-2018 0:30.00', 'D-MM-YYYY HH:mm.ss');
+const trueDeadline = moment('7-1-2018 0:30.00', 'D-MM-YYYY HH:mm.ss');
 
 const useFakeDeadline = moment().isBefore(fakeDeadline);
 
@@ -39,10 +39,10 @@ const interval = setInterval(() => {
       text = '"I know how you feel bro" - Head of YWC#15 Dev Team';
       textColor = '#cad900';
     } else if (hourNum < 2 && hourNum >= 1) {
-      text = 'Be patient! Take a deep breath.';
+      text = 'Welcome BACK!';
       textColor = '#d95800';
     } else {
-      text = 'This is your last chance. Make it count!';
+      text = 'YOU CAN DO IT!';
       textColor = '#ec4a4a';
     }
 
