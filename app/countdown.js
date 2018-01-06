@@ -9,8 +9,8 @@ const convertIntervalToTime = interval => ({
   hour: Math.floor(interval / 3600000).toFixed(0)
 });
 
-const fakeDeadline = moment('7-1-2018 1:00.00', 'D-MM-YYYY HH:mm.ss');
-const trueDeadline = moment('7-1-2018 1:00.00', 'D-MM-YYYY HH:mm.ss');
+const fakeDeadline = moment('7-1-2018 0:55.00', 'D-MM-YYYY HH:mm.ss');
+const trueDeadline = moment('7-1-2018 0:55.00', 'D-MM-YYYY HH:mm.ss');
 
 const useFakeDeadline = moment().isBefore(fakeDeadline);
 
