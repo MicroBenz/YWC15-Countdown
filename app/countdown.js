@@ -36,10 +36,10 @@ const interval = setInterval(() => {
       text = "JUST DO IT!";
       textColor = '#39df56';
     } else if (hourNum < 4 && hourNum >= 2) {
-      text = '"I know how you feel bro" - Head of YWC#15 Dev Team';
+      text = 'Welcome Back!';
       textColor = '#cad900';
     } else if (hourNum < 2 && hourNum >= 1) {
-      text = 'Welcome BACK!';
+      text = 'Welcome Back!';
       textColor = '#d95800';
     } else {
       text = 'YOU CAN DO IT!';
