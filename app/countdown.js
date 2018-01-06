@@ -29,19 +29,19 @@ const interval = setInterval(() => {
     const display = `${padTime(hour)}:${padTime(min)}:${padTime(second)}.${padMilliSec(ms)}`;
     timeSelector.innerHTML = display;
     const hourNum = parseInt(hour, 10);
-    if (hourNum < 7) {
+    if (hourNum < 7 && hourNum >= 6) {
       text = "Let's the game begin!";
       textColor = '#03dda5';
-    } else if (hourNum < 6) {
+    } else if (hourNum < 6 && hourNum >= 4) {
       text = "JUST DO IT!";
       textColor = '#39df56';
-    } else if (hourNum < 4) {
-      text = '"I know that feel bro" - Head of YWC#15 Dev Team';
+    } else if (hourNum < 4 && hourNum >= 2) {
+      text = '"I know how you feel bro" - Head of YWC#15 Dev Team';
       textColor = '#cad900';
-    } else if (hourNum < 2) {
-      text = 'At least so many thing should come out now!';
+    } else if (hourNum < 2 && hourNum >= 1) {
+      text = 'Be patient! Take a deep breath.';
       textColor = '#d95800';
-    } else if (hourNum < 1) {
+    } else {
       text = 'This is your last chance. Make it count!';
       textColor = '#ec4a4a';
     }
